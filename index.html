@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Agilesh Arumugam - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e0e9284fba.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/MyLogo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Backend Developer</p>
+                <h1>Greetings, I'm <span>Agi</span><br>From India</h1>
+            </div>
+        </div>
+    </div>
+<!-- ----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/MyFace1.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p> 
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Backend</span><br>Implementing Complex Algorithms<br>Python, C/C++ and Java</li>
+                        <li><span>Cloud</span><br>File Management Systems<br>Spring Boot</li>
+                        <li><span>App Development</span><br>AR/VR</li>
+                        <li><span>Machine Learning</span><br>Optimization Algorithms</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Backend Developer</span><br>2023 - Present</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>High School - Mahindra World School</span><br>90% in Board Exams</li>
+                        <li><span>Mtech (int.) CSE - SRM IST</span><br>2023 - 2028</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio---------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div class="project">
+                <img src="images/MyWork1.jpg">
+                <div class="layer">
+                    <h3>Smart Calculator</h3>
+                    <p>Calculator that can handle very large expressions, while following BODMAS rule.</p>
+                    <a href="https://github.com/AgiGames/SmartCalculator"><i class="fa-solid fa-square-up-right"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/MyWork2.jpg">
+                <div class="layer">
+                    <h3>Cloud Based File Management System</h3>
+                    <p>CRM Application for file management between faculty and students.</p>
+                    <a href="https://github.com/AgiGames/CRMCloudPush"><i class="fa-solid fa-square-up-right"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/MyWork3.png">
+                <div class="layer">
+                    <h3>Algorithmic Differentiation</h3>
+                    <p>Differentiate a given function numerically using the concept of Dual Numbers.</p>
+                    <a href="https://github.com/AgiGames/AlgorithmicDifferentiation"><i class="fa-solid fa-square-up-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/AgiGames?tab=repositories" class="btn">See More</a>
+    </div>
+</div>
+<!-- ----------contact---------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i>agilesh2k6@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9150633988</p>
+                <div class="social-icons">
+                    <a href="https://github.com/AgiGames"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/agilesh-arumugam-583186314/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="files/Agilesh Arumugam - CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea> 
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Agilesh Arumugam.</p>
+    </div>
+ </div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyITW6oxmk4nt9zmuDYWHal8ViBnOILjCAjkO7Kg6TZisivf6bV63aFRKFrorIs31Yz/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = "";
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
