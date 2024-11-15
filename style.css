@@ -350,3 +350,15 @@ nav .fa-solid{
     margin-top: -40px;
     display: block;
 }
+#portfolio{
+    padding: 50px 0;
+}
+.layer p {
+    line-height: 1.6;
+    font-size: 9px;
+}
+.layer h3 {
+    line-height: 1.4;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
